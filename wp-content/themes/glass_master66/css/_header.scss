@@ -1,0 +1,103 @@
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 2px solid $color1;
+  color: $color1;
+  z-index: 10;
+  background-color: #ffffff;
+  @include transition();
+
+  .logo{
+    float: left;
+    display: block;
+
+    img{
+      max-height: 80px;
+      max-width: 100%;
+    }
+  }
+
+  a{
+    color: $color1;
+    @include transition();
+    &:hover{
+      color: $color1_hover;
+      text-decoration: none;
+    }
+  }
+}
+
+.header__social, .header__phone{
+  font-size: 22px;
+  float: right;
+}
+
+.header__phone{
+  margin-left: 30px;
+}
+
+.header__social{
+  a{
+    margin-left: 10px;
+  }
+}
+
+header.fixed{
+  background: $color1;
+  position: fixed;
+  color: #fff;
+  z-index: 9;
+  padding: 0 10px;
+  line-height: 50px;
+
+
+  .logo{
+    img{
+      display: none;
+    }
+  }
+
+  h1{
+    display: block;
+    font-size: 16px;
+    margin: 0 40px 0 0;
+    line-height: 50px;
+  }
+
+  .header__phone{
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    line-height: inherit;
+
+  }
+
+  a{
+    color: #fff;
+  }
+}
+
+.admin-bar{
+  header{
+    top: 32px;
+  }
+}
+
+.site__title{
+  float: left;
+}
+
+@media(max-width: 767px) {
+  .site__title{
+    margin-left: 20px;
+    margin-top: 7px;
+  }
+}
+@media(min-width: 767px){
+  .header__phone, .header__social{
+    margin-bottom: 10px;
+  }
+}

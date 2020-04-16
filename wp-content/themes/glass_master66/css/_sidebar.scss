@@ -1,0 +1,30 @@
+.left__sidebar{
+  ul.cat__list{
+    margin: 0 0 30px 0;
+    padding: 0;
+    li{
+      list-style: none;
+      line-height: 2em;
+
+      a{
+        display: inline-block;
+        color: #000;
+        &:hover{
+          color: $color1;
+        }
+      }
+    }
+    li.active{
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        border: 10px solid transparent;
+        border-left-color: $color1;
+        right: 100%;
+        top: calc(50% - 10px);
+        margin-right: 10px;
+      }
+    }
+  }
+}

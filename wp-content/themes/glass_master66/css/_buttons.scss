@@ -1,0 +1,31 @@
+.btn{
+  display: inline-block;
+  border-radius: 0;
+  @include transition();
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn-blue{
+  background-color: $color1;
+  color: #fff;
+
+  &:hover{
+    background-color: $color1_hover;
+    color: #ffffff;
+  }
+}
+
+.btn-green{
+  background-color: $color2;
+  color: #fff;
+
+  &:hover{
+    background-color: $color2_hover;
+    color: #fff;
+  }
+}
+
+.btn-more{
+  margin-bottom: 80px;
+}

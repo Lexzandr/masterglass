@@ -1,0 +1,111 @@
+.banner{
+}
+
+.bonus{
+  text-align: center;
+  margin: 30px 0;
+  padding: 30px 0;
+  font-size: 18px;
+
+  svg{
+    fill: $color1;
+    width: 100px;
+    margin-bottom: 20px;
+    @include transition();
+  }
+
+  .col-md-4:hover{
+    svg{
+      fill: $color1_hover;
+    }
+  }
+
+  &>div{
+    margin-bottom: 15px;
+  }
+}
+
+
+.uslugi{
+  margin: 30px 0;
+}
+
+.uslugi__item{
+  margin-bottom: 30px;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+
+  a{
+    display: block;
+  }
+}
+
+.uslugi__item__wrap{
+  position: relative;
+}
+
+.uslugi__item__img{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  text-align: center;
+
+  img{
+    @include transition();
+    width: 110%;
+  }
+
+  &:hover{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.uslugi__item__title{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  line-height: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+
+.home{
+  h2{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.carousel__text{
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  position: absolute;
+  bottom: 10%;
+
+  h1{
+    margin-top: 0;
+  }
+}
+
+@media(max-width: 767px){
+  .carousel__text{
+    width: calc(100% - 30px);
+  }
+  
+  .owl-item .sa_hover_container{
+    min-height: 275px !important;
+  }
+}
+
+@media(min-width: 992px){
+  .carousel__text{
+    padding: 20px;
+    width: 350px;
+    display: block;
+  }
+}

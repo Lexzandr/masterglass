@@ -1,0 +1,62 @@
+html{
+  min-height: 100%;
+  position: relative;
+}
+
+
+
+
+@media(max-width: 767px) {
+  body{
+    padding-top: 53px;
+    padding-bottom: 330px;
+  }
+
+  .page .YMaps{
+    position: absolute;
+    bottom: 330px;
+  }
+}
+
+@media(min-width: 992px) {
+  body{
+    padding-top: 102px;
+    margin-bottom: 150px;
+  }
+
+  .page .YMaps{
+    position: absolute;
+    bottom: 124px;
+  }
+}
+
+main{
+  margin-bottom: 30px;
+}
+
+h1, h2, h3{
+  color: $color1;
+}
+
+#breadcrumbs{
+  margin: 20px 0;
+}
+
+.content{
+  img{
+    max-width: 100%;
+  }
+}
+
+.more-link{
+  clear: both;
+  display: inline-block;
+}
+
+.panel-group .panel, .form-control, .modal-content{
+  @include border-radius(0);
+}
+
+.page-id-18{
+  margin-bottom: 560px;
+}

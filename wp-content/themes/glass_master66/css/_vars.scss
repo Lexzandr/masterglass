@@ -1,0 +1,41 @@
+$color1: #005388;
+$color1_hover: #0097e7;
+$color2: #3d6616;
+$color2_hover: #76c42b;
+
+
+@mixin gradient($color_start, $color_end){
+  background: $color_start;
+  background: -moz-linear-gradient(top, $color_start 0%, $color_end 100%);
+  background: -webkit-linear-gradient(top, $color_start 0%,$color_end 100%);
+  background: linear-gradient(to bottom, $color_start 0%,$color_end 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color_start', endColorstr='$color_end',GradientType=0 );
+}
+
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition(){
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+@mixin box-shadow($params){
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+}
+
+@mixin transform($option){
+  -webkit-transform: $option;
+  -moz-transform: $option;
+  -ms-transform: $option;
+  -o-transform: $option;
+  transform: $option;
+}
